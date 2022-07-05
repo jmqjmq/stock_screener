@@ -2,7 +2,7 @@
 curl -L --user-agent "jmq1234@hotmail.com" http://www.sec.gov/Archives/edgar/daily-index/xbrl/companyfacts.zip > historical/companyfacts.zip
 curl -L --user-agent "jmq1234@hotmail.com" https://www.sec.gov/files/company_tickers.json > data/company_tickers.json
 cd historical
-rm CIK*.json
+rm -f CIK*.json
 unzip companyfacts.zip
 rm companyfacts.zip
 cd ..
